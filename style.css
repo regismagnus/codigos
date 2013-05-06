@@ -1,0 +1,337 @@
+/*
+Design by Regis Magnus
+http://www.regismagnus.com.br
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: underline;
+	color: #FF381A;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	line-height: 1.75em;
+	background: #FFFFFF;
+	font-size: 11.5pt;
+	color: #000000;
+	background-image: url("images/fundo.png");
+	background-repeat: repeat-x;
+}
+
+body,input {
+	font-family: Kreon, serif;
+}
+
+br.clearfix {
+	clear: both;
+}
+
+img.alignleft {
+	float: left;
+	margin: 5px 30px 20px 0;
+}
+
+img.aligntop {
+	margin: 5px 0 20px 0;
+}
+
+img.centro {
+   display: block;
+   margin: 10px 0 10px 0;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+img.sequencia {
+   margin: 10px;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+ul {
+	margin-bottom: 1.5em;
+}
+
+ul h4 {
+	margin-bottom: 0.35em;
+}
+
+ul li ul li {
+    margin-left: 30px;
+}
+
+ul li ul li.first {
+   list-style-type: none;
+   margin-left: 0;
+}
+
+.box {
+	margin: 0 0 50px 0;
+}
+
+#content {
+	padding: 0;
+	width: auto;
+}
+
+#content h2 {
+    margin-bottom: 30px;
+    border-style: solid;
+    border-color: red;
+    border-width: 0 0 2px 0;
+}
+
+#footer {
+	padding: 50px 0 80px 0;
+	text-align: center;
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.7);
+	color: #587477;
+}
+
+#header {
+	height: 288px;
+	position: relative;
+	background-image: url("images/header.png");
+	background-repeat: no-repeat;
+}
+
+#logo {
+	position: absolute;
+	bottom: -3px;
+    left: 40px;
+}
+
+#titulo {
+    position: absolute;
+    top: 45px;
+    left: 300px;
+    height: 40px;
+    color: #FFFFFF;
+	line-height: 50px;
+}
+
+#titulo h1, h2 {
+  	text-transform: uppercase;
+    font-family: Kreon, serif;
+}
+
+#titulo h1 {
+    font-size: 50pt;
+    margin-bottom: 30px;
+}
+
+#titulo h2 {
+    font-size: 35pt;
+    margin-left: 50px;
+}
+
+#menu {
+	line-height: 57px;
+	position: relative;
+	height: 57px;
+	font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul li {
+	display: inline;
+	padding: 17px 15px 17px 15px;
+}
+
+#menu ul li:hover {
+    background: #616161; /* para browsers sem suporte a CSS 3 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#797979', endColorstr='#616161'); /* IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#797979), to(#616161)); /* webkit browsers */
+    background: -moz-linear-gradient(top,  #797979,  #616161);
+}
+
+#page {
+	margin: 0;
+	position: relative;
+	width: auto;
+	padding: 20px 40px 0 40px;
+}
+
+#slideshow {
+    position:relative;
+    height:400px;
+    width:600px;
+    margin:0 auto;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    background: #FFFFFF;
+}
+
+#imagem {
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+#imagem img {
+    position:absolute;
+    top:0;
+    left:0;
+    margin-left: 150px;
+    z-index:8;
+}
+#imagem img.active {
+    z-index:10;
+}
+#imagem img.last-active {
+    z-index:9;
+}
+
+#tituloSlide {
+    position: absolute;
+    width: 600px;
+    height: 25px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #FFFFFF;
+    z-index:11;
+}
+
+#tituloSlide h3 {
+    position: absolute;
+    width: 600px;
+    background-color: #000000;
+    z-index:12;
+}
+
+#tituloSlide h3.active{
+    z-index: 14;
+}
+
+#tituloSlide h3.last-active {
+    z-index: 13;
+}
+
+#painel {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    height: 300px;
+    background-color: #000000;
+}
+
+#painel img {
+    position: absolute;
+    right: -200px;
+    top: 0;
+    opacity: 0.0;
+    filter:alpha(opacity=0);
+}
+
+#painel img.active {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    visibility: visible;
+    opacity: 1.0;
+    filter:alpha(opacity=100);
+}
+
+#painel img.active-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: visible;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+}
+
+#painel img.active-right {
+    position: absolute;
+    left: 400px;
+    top: 0;
+    visibility: visible;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+}
+
+#painel img.fora {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    opacity: 0.0;
+    filter:alpha(opacity=0);
+}
+
+#painelDesk {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    height: 300px;
+    background-color: #000000;
+}
+
+#painelDesk img {
+    position: absolute;
+    right: -200px;
+    top: 0;
+    opacity: 0.0;
+    filter:alpha(opacity=0);
+}
+
+#painelDesk img.active {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    visibility: visible;
+    opacity: 1.0;
+    filter:alpha(opacity=100);
+}
+
+#painelDesk img.active-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: visible;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+}
+
+#painelDesk img.active-right {
+    position: absolute;
+    left: 400px;
+    top: 0;
+    visibility: visible;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+}
+
+#painelDesk img.fora {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    opacity: 0.0;
+    filter:alpha(opacity=0);
+}
+
+#wrapper {
+	width: 978px;
+	position: relative;
+	margin: 0 auto 0 auto;
+}
