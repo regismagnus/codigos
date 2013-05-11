@@ -11,28 +11,70 @@ shuffle($ordem);
 $cripto = "//Funcao para criptografar a palavra. Parametro palavra-senha. return palavra criptografada.
 function criptografar(\$word){
 
-global \$ordem, \$caracteres;
-\$criptografado = \"\";
-\$letter = str_split(\$word);
 
-foreach(\$letter as \$l){
-      \$criptografado.= \$caracteres[array_search(\$l, \$ordem)];
+
+global \$ordem, \$caracteres;
+
+\$criptografado = \"\";
+
+\$letter = str_split(\$word);
+\$aux = 0;
+
+for(\$i=count(\$letter); \$i<count(\$ordem); \$i++){
+   \$subordem[\$aux] = \$ordem[\$i];
+   \$aux++;
 }
 
+for(\$i=0; \$i<count(\$letter); \$i++){
+   \$subordem[\$aux] = \$ordem[\$i];
+   \$aux++;
+}
+
+foreach(\$letter as \$l){
+
+      \$criptografado.= \$caracteres[array_search(\$l, \$subordem)];
+
+}
+
+
 return \$criptografado;
-}";
+
+}
+";
 
 $descripto = "//Funcao para descriptografar a palavra. Parametro palavra-senha criptografada. return palavra descriptografada.
 function descriptografar(\$word){
+
 global \$ordem, \$caracteres;
+
 \$descriptografado = \"\";
+
 \$letter = str_split(\$word);
 
-foreach(\$letter as \$l){
-      \$descriptografado.=\$ordem[array_search(\$l, \$caracteres)];
+\$aux = count(\$letter);
+
+for(\$i=0; \$i<count(\$ordem)-count(\$letter); \$i++){
+   \$subordem[\$i] = \$ordem[\$aux];
+   \$aux++;
 }
 
+\$aux = 0;
+for(\$i=count(\$ordem)-count(\$letter); \$i<count(\$ordem); \$i++){
+   \$subordem[\$i] = \$ordem[\$aux];
+   \$aux++;
+}
+
+foreach(\$letter as \$l){
+
+      \$descriptografado.=\$subordem[array_search(\$l, \$caracteres)];
+
+}
+
+              echo \$descriptografado;
+
 return \$descriptografado;
+
+
 
 }";
 
