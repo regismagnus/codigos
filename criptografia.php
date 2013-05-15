@@ -20,12 +20,12 @@ global \$ordem, \$caracteres;
 \$letter = str_split(\$word);
 \$aux = 0;
 
-for(\$i=count(\$letter); \$i<count(\$ordem); \$i++){
+for(\$i=count(\$letter); \$i&lt;count(\$ordem); \$i++){
    \$subordem[\$aux] = \$ordem[\$i];
    \$aux++;
 }
 
-for(\$i=0; \$i<count(\$letter); \$i++){
+for(\$i=0; \$i&lt;count(\$letter); \$i++){
    \$subordem[\$aux] = \$ordem[\$i];
    \$aux++;
 }
@@ -53,13 +53,13 @@ global \$ordem, \$caracteres;
 
 \$aux = count(\$letter);
 
-for(\$i=0; \$i<count(\$ordem)-count(\$letter); \$i++){
+for(\$i=0; \$i&lt;count(\$ordem)-count(\$letter); \$i++){
    \$subordem[\$i] = \$ordem[\$aux];
    \$aux++;
 }
 
 \$aux = 0;
-for(\$i=count(\$ordem)-count(\$letter); \$i<count(\$ordem); \$i++){
+for(\$i=count(\$ordem)-count(\$letter); \$i&lt;count(\$ordem); \$i++){
    \$subordem[\$i] = \$ordem[\$aux];
    \$aux++;
 }
