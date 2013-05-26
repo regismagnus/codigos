@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+    <item android:id="@+id/editarPagina"
+        	android:orderInCategory="97"
+        	android:title="@string/MenuEditarPagina" 
+        	android:icon="@drawable/editar"/>
+    
+    <item android:id="@+id/andamentoLeitura"
+        	android:orderInCategory="98"
+        	android:title="@string/MenuAndamentoLeitura"
+        	android:icon="@drawable/andamento" />
+    
+    <item android:id="@+id/pararLeitura"
+        	android:orderInCategory="99"
+        	android:title="@string/MenuPararLeitura" 
+        	android:icon="@drawable/parar"/>
+    
+    <item android:id="@+id/inicio"
+        	android:orderInCategory="100"
+        	android:title="@string/MenuInicio"
+        	android:icon="@drawable/inicio" />
+
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+		<item 
+		    android:id="@+id/comecarLer"
+        	android:orderInCategory="97"
+        	android:title="@string/MenuLer"
+        	android:icon="@drawable/ler"
+        />
+		<item 
+		    android:id="@+id/editarInformacoes"
+        	android:orderInCategory="98"
+        	android:title="@string/MenuEditarInformacoes"
+        	android:icon="@drawable/editar"
+        />
+		<item 
+		    android:id="@+id/excluir"
+        	android:orderInCategory="99"
+        	android:title="@string/MenuExcluir"
+        	android:icon="@drawable/excluir"
+        />
+		<item 
+		    android:id="@+id/inicio"
+        	android:orderInCategory="100"
+        	android:title="@string/MenuInicio"
+        	android:icon="@drawable/inicio"
+        />
+    
+</menu>

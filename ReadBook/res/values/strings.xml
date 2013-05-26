@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Read Book</string>
+    <string name="action_settings">Settings</string>
+    
+    <!--Tela inicial-->
+    <string name="lendo">Atualmente Lendo:</string>
+	
+	<!--Tela Listar Livros-->
+	<string name="pagina">Página</string>
+	<string name="busca">Buscar:</string>
+	
+	<!--Informacoes de livros-->
+	<string name="titulo">Titulo:</string>
+	<string name="subTitulo">Subtitulo:</string>
+	<string name="autor">Autor:</string>
+	<string name="editora">Editora:</string>
+	<string name="edicao">Edição:</string>
+	<string name="numeroPaginas">Número de Páginas:</string>
+	<string name="isbn">ISBN:</string>
+	<string name="ano">Ano:</string>
+	<string name="descricao">Descrição:</string>
+	
+	<!-- Tela Info Ler Atual -->
+	<string name="lendoPagina">Você está lendo à página:</string>
+	<string name="totalPagina">Número de Páginas:</string>
+	
+	<!-- Tela Status -->
+	<string name="inicioLeitura">Inicio leitura:</string>
+	<string name="ultimaLeitura">Ultima leitura:</string>
+	<string name="mediaPaginas">Média de páginas por dia:</string>
+	
+	<!-- Botao Gravar -->
+	<string name="gravar">Salvar</string>
+	
+	<string name="BotaoBuscar">Buscar</string>
+	
+	<!-- Menus -->
+	<string name="MenuSalvar">Salvar</string>
+	<string name="MenuCancelar">Cancelar</string>
+	<string name="MenuInicio">Inicio</string>
+	<string name="MenuListaLivros">Lista de Livros</string>
+	<string name="MenuCadastrarLivro">Cadastrar Livro</string>
+	<string name="MenuSobre">Sobre</string>
+	<string name="MenuAnterior">Anterior</string>
+	<string name="MenuProximo">Proximo</string>
+	<string name="MenuEditarPagina">Alterar Página Atual</string>
+	<string name="MenuEditarInformacoes">Editar Informações</string>
+	<string name="MenuLer">Começar a Ler</string>
+	<string name="MenuExcluir">Excluir Livro</string>
+	<string name="MenuPararLeitura">Parar de ler</string>
+	<string name="MenuAndamentoLeitura">Andamento de Leitura</string>
+	<string name="MenuVoltar">Voltar</string>
+	
+	<string name="nenhum">Nenhum livro cadastrado</string>
+	<string name="lendoNenhum">Você não esta lendo nenhum livro</string>
+	
+</resources>

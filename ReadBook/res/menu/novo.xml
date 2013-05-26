@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+    <item 
+        android:id="@+id/salvar"
+        android:orderInCategory="99"
+        android:title="@string/MenuSalvar"
+        android:icon="@drawable/salvar"/>
+      <item 
+        android:id="@+id/cancelar"
+        android:orderInCategory="100"
+        android:title="@string/MenuCancelar"
+        android:icon="@drawable/cancelar"/>
+
+</menu>
